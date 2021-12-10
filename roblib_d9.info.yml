@@ -1,0 +1,29 @@
+name: roblib_d9
+type: theme
+description: 'My Awesome theme'
+package: Other
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries:
+  - roblib_d9/global-styling
+ 
+base theme: classy
+#Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
+
+regions:
+  navbar_right: 'Navigation bar right'
+  navbar_middle: 'Navigation bar middle'
+  navbar_left: 'Navigation bar left'
+  mobile_menu: 'Mobile menu panel'
+  header: 'Header'
+  content: 'Content'
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  footer: 'Footer'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  breadcrumb: 'Breadcrumb'

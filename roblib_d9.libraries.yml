@@ -1,0 +1,16 @@
+global-styling:
+  version: 1.0
+  css:
+    base:
+      #bower_components/foundation-sites/dist/css/foundation.min.css: {}
+      #bower_components/motion-ui/dist/motion-ui.css: {}
+    theme:
+      css/roblib.css: { preprocess: false }
+  js:
+    bower_components/foundation-sites/dist/js/foundation.min.js: {}
+    bower_components/motion-ui/dist/motion-ui.min.js: {}
+    js/roblib.js: { preprocess: false }
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once

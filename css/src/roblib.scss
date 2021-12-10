@@ -1,0 +1,20 @@
+
+@charset 'utf-8';
+/*
+ *configuration
+ */
+@import 'config/variables';
+@import 'config/mixins';
+@import 'config/fonts';
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-everything;
+@import 'init';
+.test {
+color:blue;
+}
+main {
+margin: $global-margin *4;
+}

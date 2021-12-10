@@ -1,0 +1,15 @@
+$nav-text-color: $white;
+$nav-height: 75px;
+$nav-background: #2c3840;
+$offcanvas-padding: 20px;
+.top-bar {
+  ul.menu a {
+    color: #fff;
+  }
+  ul.menu a.is-active {
+    color: $upei-yellow;
+  }
+  ul.menu a:hover {
+    text-decoration: underline;
+  }
+}
