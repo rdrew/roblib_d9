@@ -6655,6 +6655,10 @@ html.is-reveal-open body {
 /*
  *components
  */
+.branding  {
+  display: flex;
+}
+
 .top-bar ul.menu a {
   color: #fff;
 }
