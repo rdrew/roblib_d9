@@ -1,3 +1,22 @@
-.branding {
-display: flex;
+/*
+ *branding
+ */
+#block-roblib-d9-branding {
+  display: flex;
+  img {
+    width: 200px;
+    border-right: 1px solid $upei-red;
+    padding-right: calc($global-padding/2);
+    margin-right: calc($global-margin/2);
+  }
+}
+.site-name {
+  display: flex;
+  flex-direction: center;
+  font-family: $header-font-family;
+  align-items: center;
+  a {
+    font-size: 2rem;
+    color: #333;
+  }
 }

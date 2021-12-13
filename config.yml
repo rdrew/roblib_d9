@@ -22,6 +22,7 @@ PATHS:
             - libraries/guff
             - bower_components/foundation-sites/scss
             - bower_components/motion-ui/src
+            - node_modules/modularscale-sass/stylesheets
     Css:
         Dir: css
         #FileName: app.css

@@ -22,6 +22,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp4-run-sequence": "^1.0.0",
     "js-yaml": "^4.1.0",
+    "modularscale-sass": "^3.0.10",
     "natives": "^1.1.6",
     "require-dir": "^1.2.0",
     "run-sequence": "^2.2.1",

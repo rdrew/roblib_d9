@@ -1,0 +1,10 @@
+#search-block-form {
+  display: flex;
+  align-items: center;
+  input[type="search"] {
+    margin: 0;
+  }
+  input[type="submit"] {
+    margin: 0;
+  }
+}
