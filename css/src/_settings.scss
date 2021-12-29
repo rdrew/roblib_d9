@@ -158,16 +158,17 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
+    'h1': ('font-size': $ms4),
+    'h2': ('font-size': $ms3),
+    'h3': ('font-size': $ms2),
+    'h4': ('font-size': $ms1),
+    'h5': ('font-size': $ms0),
     'h6': ('font-size': 16),
   ),
 );
 $header-text-rendering: optimizeLegibility;
-$small-font-size: 80%;
+//$small-font-size: 80%;
+$small-font-size: ms(-1);
 $header-small-font-color: $medium-gray;
 $paragraph-lineheight: 1.6;
 $paragraph-margin-bottom: 1rem;
@@ -241,7 +242,7 @@ $accordion-background: $white;
 $accordion-plusminus: true;
 $accordion-plus-content: '\002B';
 $accordion-minus-content: '\2013';
-$accordion-title-font-size: rem-calc(12);
+$accordion-title-font-size: $ms0;
 $accordion-item-color: $primary-color;
 $accordion-item-background-hover: $light-gray;
 $accordion-item-padding: 1.25rem 1rem;
@@ -281,7 +282,7 @@ $badge-font-size: 0.6rem;
 // ---------------
 
 $breadcrumbs-margin: 0 0 $global-margin 0;
-$breadcrumbs-item-font-size: rem-calc(11);
+$breadcrumbs-item-font-size: ms(-1);
 $breadcrumbs-item-color: $primary-color;
 $breadcrumbs-item-color-current: $black;
 $breadcrumbs-item-color-disabled: $medium-gray;
@@ -440,14 +441,14 @@ $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
 $form-spacing: rem-calc(16);
 $helptext-color: $black;
-$helptext-font-size: rem-calc(13);
+$helptext-font-size: ms(-1);
 $helptext-font-style: italic;
 $input-prefix-color: $black;
 $input-prefix-background: $light-gray;
 $input-prefix-border: 1px solid $medium-gray;
 $input-prefix-padding: 1rem;
 $form-label-color: $black;
-$form-label-font-size: rem-calc(14);
+$form-label-font-size: $ms0;
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
 $select-background: $white;
@@ -456,7 +457,7 @@ $select-radius: $global-radius;
 $input-color: $black;
 $input-placeholder-color: $medium-gray;
 $input-font-family: inherit;
-$input-font-size: rem-calc(16);
+$input-font-size: rem-calc(14);
 $input-font-weight: $global-weight-normal;
 $input-line-height: $global-lineheight;
 $input-background: $white;
@@ -480,7 +481,7 @@ $label-background: $primary-color;
 $label-color: $white;
 $label-color-alt: $black;
 $label-palette: $foundation-palette;
-$label-font-size: 0.8rem;
+$label-font-size: ms(-1);
 $label-padding: 0.33333rem 0.5rem;
 $label-radius: $global-radius;
 
@@ -557,7 +558,7 @@ $orbit-control-zindex: 10;
 // 27. Pagination
 // --------------
 
-$pagination-font-size: rem-calc(14);
+$pagination-font-size: $ms0;
 $pagination-margin-bottom: $global-margin;
 $pagination-item-color: $black;
 $pagination-item-padding: rem-calc(3 10);
@@ -826,7 +827,8 @@ $tab-background: $white;
 $tab-color: $primary-color;
 $tab-background-active: $light-gray;
 $tab-active-color: $primary-color;
-$tab-item-font-size: rem-calc(12);
+//$tab-item-font-size: rem-calc(12);
+$tab-item-font-size: $ms0;
 $tab-item-background-hover: $white;
 $tab-item-padding: 1.25rem 1.5rem;
 $tab-content-background: $white;

@@ -9,6 +9,7 @@ global-styling:
   js:
     bower_components/foundation-sites/dist/js/foundation.min.js: {}
     bower_components/motion-ui/dist/motion-ui.min.js: {}
+    js/foundation_init.js: {}
     js/roblib.js: { preprocess: false }
   dependencies:
     - core/drupal
