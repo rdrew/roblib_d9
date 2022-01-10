@@ -1,6 +1,8 @@
 
+.dropdown.menu,
 .mega-menu {
-  .dropdown-pane {
+  .dropdown-pane,
+  .is-dropdown-submenu {
     width: 100%;
     max-width: 85rem;
     margin: 0 auto !important;
@@ -25,4 +27,6 @@
     margin-top: 11%;
   }
 }
-
+.is-dropdown-submenu-parent {
+  position: initial;
+}

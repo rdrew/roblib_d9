@@ -19,6 +19,14 @@ function loadConfig() {
 // BrowserSync
 function bsInit(done) {
   browsersync.init({
+    logLevel: 'debug',
+    proxy: 'https://roblib_2022.lndo.site'
+  });
+  done();
+}
+
+function bsInit__remote(done) {
+  browsersync.init({
     proxy: SITE.Remote.Url,
     serveStatic: ['.'],
     files: PATHS.Watch,

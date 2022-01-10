@@ -1,11 +1,13 @@
 header {
   padding-top: $global-padding;
   padding-bottom: $global-padding;
-	box-shadow: 0px 4px 5px 0px #D4D6D8;
+  box-shadow: 0px 4px 5px 0px #d4d6d8;
 }
 .region-header {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
+  @include breakpoint(large) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
