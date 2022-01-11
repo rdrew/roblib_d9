@@ -6775,9 +6775,45 @@ header {
 .top-bar ul.menu a:hover {
   text-decoration: underline;
 }
+.top-bar-right {
+  display: flex;
+}
 
 .topnav__wrapper {
   background: #8c2004;
+}
+
+.menu-trigger {
+  background-color: transparent;
+  margin: 0;
+}
+.menu-trigger:hover {
+  background-color: transparent;
+}
+@media print, screen and (max-width: 39.99875em) {
+  .menu-trigger {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .menu-trigger::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    box-shadow: 0 9px 0 #fff, 0 18px 0 #fff;
+    content: "";
+  }
+  .menu-trigger:hover::after {
+    background: #fff;
+    box-shadow: 0 9px 0 #fff, 0 18px 0 #fff;
+  }
 }
 
 .search-block-form form {

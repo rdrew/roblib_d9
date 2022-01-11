@@ -15,7 +15,20 @@ $offcanvas-padding: 20px;
   ul.menu a:hover {
     text-decoration: underline;
   }
+  &-right {
+    display: flex;
+  }
 }
 .topnav__wrapper {
   background: $topbar-background;
+}
+.menu-trigger {
+  background-color: transparent;
+  margin: 0;
+  &:hover {
+    background-color: transparent;
+  }
+  @include breakpoint(small down) {
+    @include hamburger(#fff, #fff, 20px, 20px, 2px, 3);
+  }
 }

@@ -51,6 +51,11 @@ function bsReload(done) {
   done();
 }
 
+var cp = require('child_process');
+function drush() {
+  return cp.exec('lando drush cr');
+}
+
 // Compile CSS
 function styles() {
   'use strict';
@@ -74,6 +79,7 @@ function styles() {
 function watchFiles() {
   'use strict';
   gulp.watch(PATHS.Scss.Dir + '/**/*.scss', styles);
+  gulp.watch('./templates/**/*.twig', drush);
 }
 
 // Group complex tasks
@@ -83,5 +89,6 @@ const watch = gulp.series(styles, gulp.parallel(watchFiles, bsInit));
 // Export tasks
 exports.build = build;
 exports.styles = styles;
+exports.drush = drush;
 exports.watch = watch;
 exports.default = watch;
