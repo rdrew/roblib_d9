@@ -1,0 +1,13 @@
+.home {
+  @extend %fa-icon;
+  @extend .fa-solid;
+
+  &:before {
+    margin-right: 5px;
+    font-family: 'Font Awesome 6 Free';
+    content: fa-content($fa-var-home);
+  }
+}
+.menu--main ul {
+  margin: 0;
+}

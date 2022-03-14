@@ -1,0 +1,35 @@
+.event {
+  display: flex;
+  margin-top: $global-margin;
+  margin-bottom: $global-margin * 2;
+  &--date {
+    border-right: 1px solid $upei-red;
+    line-height: .9;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+    .month {
+      text-transform: uppercase;
+      font-size: $ms2;
+      font-family: $adelle-regular;
+    }
+    .day {
+
+      font-family: $adelle-regular;
+      font-size: $ms2;
+    }
+  }
+  &--info {
+    padding-left: 10px;
+  }
+  &--title {
+    font-family: $adelle-bold;
+    font-size:$ms1;
+    line-height: 1;
+  }
+  &--time {
+    font-size:$ms1;
+  }
+}

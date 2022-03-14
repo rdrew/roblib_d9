@@ -1,2 +1,74 @@
 .tabs.primary {
-background: #fff;}
+  background: #fff;
+}
+
+/*
+ *tabbed search
+ */
+
+$tabbedSearchBackground: #fff;
+$tabbedSearchContainerBackground: #ecebeb;
+$tabbedSearchText: #43403a;
+//container
+.tab-content.view-search-tabs {
+  background: $tabbedSearchContainerBackground;
+  padding: $global-padding;
+  margin-bottom:$global-margin*2;
+}
+ul.search-tabs {
+  background: $tabbedSearchContainerBackground;
+}
+//search input styles and button
+
+.view-search-tabs {
+  input[type='search'] {
+    //display: none;
+    width: 100%;
+  }
+  input[type='submit'] {
+    margin: 0;
+  }
+}
+
+.view-search-tabs {
+  .tabs-title a {
+    //background: $tabbedSearchContainerBackground;
+
+    margin-bottom: -1px;
+    border-radius: 6px 6px 0 0;
+    width: 9em;
+    text-align: center;
+    margin-right: 2px;
+    @include disable-mouse-outline;
+    display: block;
+    line-height: 1;
+
+    text-transform: uppercase;
+    font-family: 'Open Sans SemiBold';
+
+    //color: $color;
+
+    &:hover {
+      background: $tabbedSearchBackground;
+
+      //color: scale-color($color, $lightness: -14%);
+    }
+
+    &:focus,
+    &[aria-selected='true'] {
+      background: $tabbedSearchBackground;
+      //color: $color-active;
+      @extend %fa-icon;
+      @extend .fa-solid;
+      font-family: $body-font-family;
+
+      &:before {
+        font-family: $icon-font;
+        //font-family: 'Font Awesome 6 Free';
+        content: fa-content($fa-var-magnifying-glass);
+        position: relative;
+        margin-right: 5px;
+      }
+    }
+  }
+}

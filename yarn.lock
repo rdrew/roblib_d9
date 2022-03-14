@@ -9,6 +9,11 @@
   dependencies:
     "regenerator-runtime" "^0.13.4"
 
+"@fortawesome/fontawesome-free@^6.0.0-beta3":
+  "integrity" "sha512-4SqOuhC8tSLeQvbW1nDmq6T7+8vdSgHy/w7PRwCFzMQCbKuYFIir/3UuWsV1QblX1lt7SGlSgwbaCv9XhRt8HA=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-6.0.0-beta3.tgz"
+  "version" "6.0.0-beta3"
+
 "@gulp-sourcemaps/identity-map@^2.0.1":
   "integrity" "sha512-Tb+nSISZku+eQ4X1lAkevcQa+jknn/OVUgZ3XCxEKIsLsqYuPoJwJOPQeaOk75X3WPftb29GWY1eqE7GLsXb1Q=="
   "resolved" "https://registry.npmjs.org/@gulp-sourcemaps/identity-map/-/identity-map-2.0.1.tgz"
@@ -27,6 +32,11 @@
   dependencies:
     "normalize-path" "^2.0.1"
     "through2" "^2.0.3"
+
+"a11y-accordion-tabs@^1.0.2":
+  "integrity" "sha512-AdaQKp+xWaw0NgxX3cXqSPbjL9Z5V0gE+gX+B7AIIs7pX9/Ro8MzrbAiDtNC5sfJhISfiXz1QS5ksHZ/xMcm0A=="
+  "resolved" "https://registry.npmjs.org/a11y-accordion-tabs/-/a11y-accordion-tabs-1.0.2.tgz"
+  "version" "1.0.2"
 
 "accepts@~1.3.4":
   "integrity" "sha512-Il80Qs2WjYlJIBNzNkK6KYqlVMTbZLXgHx2oT0pU/fjRHyEp+PEfEPY0R3WCwAGVOtauxh1hOxNgIf5bv7dQpA=="

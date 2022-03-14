@@ -1,0 +1,9 @@
+.subject_librarian_display {
+  @include xy-grid-container;
+  @include xy-grid;
+  &--container {
+  }
+  .subject_librarian {
+  @include xy-cell(6);
+  }
+}

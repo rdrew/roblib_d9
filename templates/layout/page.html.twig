@@ -1,55 +1,60 @@
-<div class="layout-container">
-
-  <!--___________________Topnav___________________-->
-
-  <div class="topnav__wrapper">
-    <div class="container topnav__container">
-      {% include '@roblib_d9/components/topnav/topnav--mobile.html.twig'  %}
-      {% include '@roblib_d9/components/topnav/topnav.html.twig'  %}
-    </div>
+<div class="off-canvas-content" data-off-canvas-content>
+  <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+    <!-- Your menu or Off-canvas content goes here -->
+    {% include '@roblib_d9/components/topnav/topnav--mobile.html.twig'  %}
   </div>
-  <header role="banner">
-    <div class="container">
-      {{ page.header }}
+  <div class="layout-container">
+
+    <!--___________________Topnav___________________-->
+
+    <div class="topnav__wrapper">
+      <div class="container topnav__container">
+        {% include '@roblib_d9/components/topnav/topnav.html.twig'  %}
+      </div>
     </div>
-  </header>
+    <header role="banner">
+      <div class="container">
+        {{ page.header }}
+      </div>
+    </header>
 
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
+    {{ page.primary_menu }}
+    {{ page.secondary_menu }}
 
-  {{ page.breadcrumb }}
+    {{ page.breadcrumb }}
 
-  {{ page.highlighted }}
+    {{ page.highlighted }}
 
-  {{ page.help }}
+    {{ page.help }}
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <main role="main">
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
+      <div class="layout-content">
+        {{ page.content }}
+      </div>{# /.layout-content #}
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
+      {% if page.sidebar_first %}
+        <aside class="layout-sidebar-first" role="complementary">
+          {{ page.sidebar_first }}
+        </aside>
+      {% endif %}
+
+      {% if page.sidebar_second %}
+        <aside class="layout-sidebar-second" role="complementary">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+
+    </main>
+
+    {% if page.footer %}
+      <footer role="contentinfo">
+        {{ page.footer }}
+        {{ page.subfooter }}
+      </footer>
+
     {% endif %}
 
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
-
-  </main>
-
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-      {{ page.subfooter }}
-    </footer>
-
-  {% endif %}
-
-</div>{# /.layout-container #}
+  </div>{# /.layout-container #}
+</div>

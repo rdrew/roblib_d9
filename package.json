@@ -8,6 +8,7 @@
     "test": "test"
   },
   "devDependencies": {
+    "a11y-accordion-tabs": "^1.0.2",
     "breakpoint-sass": "^2.7.1",
     "browser-sync": "latest",
     "bs-rewrite-rules": "^2.1.2",
@@ -32,5 +33,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0-beta3"
+  }
 }

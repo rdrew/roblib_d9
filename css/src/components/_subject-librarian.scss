@@ -1,0 +1,45 @@
+.subject_librarian_display {
+  margin-bottom: $global-margin * 2;
+  //@include xy-grid-container;
+  @include xy-grid;
+  &--container {
+  }
+  .subject_librarian {
+    //@include xy-gutters(2rem);
+    @include xy-gutters($gutters: 2);
+    @include xy-cell(3);
+  }
+}
+.subject_librarian img {
+  width: 100%;
+  height: auto;
+  //height:150px;
+  //padding:$global-padding;
+  //border-radius:50%;
+}
+.circle-mask {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+.subject_librarian--name {
+  color:#333;
+
+  padding: 0.5rem 1rem;
+  font-family: $adelle-semibold;
+  justify-content: space-around;
+  a {
+    color: #333;
+    font-size: $ms0;
+  }
+}
+.subject_librarian--subjects {
+  color:#333;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: ms(-1);
+  display: flex;
+  justify-content: space-around;
+}

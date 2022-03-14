@@ -1,0 +1,25 @@
+.menu--social-media-links {
+  ul.menu a.is-active {
+    color: #fff;
+  }
+  a.is-active,
+  a {
+    font-family: $body-font-family;
+    @extend %fa-icon;
+    @extend .fa-brands;
+    &:before {
+      margin-right: 8px;
+      font-size: 1.5rem;
+      font-family: 'Font Awesome 6 Brands';
+    }
+  }
+  .facebook:before {
+    content: fa-content($fa-var-facebook);
+  }
+  .twitter:before {
+    content: fa-content($fa-var-twitter);
+  }
+  .instagram:before {
+    content: fa-content($fa-var-instagram);
+  }
+}

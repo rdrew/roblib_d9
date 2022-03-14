@@ -1,0 +1,14 @@
+
+<ul class="tabs search-tabs" data-tabs id="search-tabs">
+    {% for row in rows %}
+    {% if loop.first %}
+      <li class="tabs-title is-active">
+    {% else %}
+      <li class="tabs-title">
+    {% endif %}
+        <a data-tabs-target="{{ row.content['#row']._entity.nid.value }}" href="#{{ row.content['#row']._entity.nid.value }}">{{ row.content['#row']._entity.title.value }}</a>
+      </li>
+    {% endfor %}
+</ul>
+
+

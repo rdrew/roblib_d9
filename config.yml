@@ -23,6 +23,7 @@ PATHS:
             - bower_components/foundation-sites/scss
             - bower_components/motion-ui/src
             - node_modules/modularscale-sass/stylesheets
+            - libraries/fontawesome-free/scss
     Css:
         Dir: css
         #FileName: app.css

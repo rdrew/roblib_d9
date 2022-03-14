@@ -3,8 +3,12 @@
  */
 #block-roblib-d9-branding {
   display: flex;
+  flex-direction: center;
+  .site-logo {
+    display: flex;
+  }
   img {
-    width: 160px;
+    width: 200px;
     border-right: 1px solid $upei-red;
     padding-right: calc($global-padding/2);
     margin-right: calc($global-margin/2);
@@ -13,11 +17,14 @@
 .site-name {
   display: flex;
   flex-direction: center;
-  font-family: $header-font-family;
+  font-family: $adelle-semibold;;
+  //font-variant: small-caps;
   align-items: center;
+  width: rem-calc(150);
   a {
-    font-size: $ms3;
-    line-height: 1.8;
+    font-size: $ms2;
+    line-height: 1.1;
     color: #333;
+    //margin-left: .5rem;
   }
 }

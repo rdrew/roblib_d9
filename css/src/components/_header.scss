@@ -4,7 +4,8 @@ header {
   box-shadow: 0px 4px 5px 0px #d4d6d8;
 }
 .region-header {
-  @include breakpoint(large) {
+  //@include breakpoint(large) {
+  @include breakpoint(1530px) {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;

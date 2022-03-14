@@ -1,0 +1,39 @@
+{% import _self as menus %}
+
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% if menu_level == 0 %}
+      <ul{{ attributes.addClass('dropdown menu') }} data-dropdown-menu >
+    {% else %}
+      <ul class="menu">
+    {% endif %}
+    {% for item in items %}
+      {%
+        set classes = [
+          'menu-item',
+          item.is_expanded ? 'menu-item--expanded',
+          item.is_collapsed ? 'menu-item--collapsed',
+          item.in_active_trail ? 'menu-item--active-trail',
+        ]
+      %}
+      <li{{ item.attributes.addClass(classes) }}>
+        {% if item.title == 'Facebook' %}
+        {#{% include '@roblib_d9/components/fontawesome/facebook.svg'  %}#}
+        {% elseif item.title == 'Twitter' %}
+        {#{% include '@roblib_d9/twitter.svg'  %}#}
+        {% elseif item.title == 'Instagram' %}
+        {#{% include '@roblib_d9/instagram.svg'  %}#}
+        {% else %}
+          {{ link(item.title, item.url) }}
+        {% endif %}
+        {% if item.below %}
+          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

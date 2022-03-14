@@ -4,7 +4,7 @@ font-style: normal;
 font-weight: normal;
 src: local('Adelle Regular'), url('../fonts/adelle/Adelle_Reg.woff') format('woff');
 }
-
+$adelle-regular: 'Adelle Regular';
 
 @font-face {
 font-family: 'Adelle Italic';
@@ -13,6 +13,7 @@ font-weight: normal;
 src: local('Adelle Italic'), url('../fonts/adelle/Adelle_Italic.woff') format('woff');
 }
 
+$adelle-italic: 'Adelle Italic';
 
 @font-face {
 font-family: 'Adelle Light Italic';
@@ -21,6 +22,7 @@ font-weight: normal;
 src: local('Adelle Light Italic'), url('../fonts/adelle/Adelle_LightItalic.woff') format('woff');
 }
 
+$adelle-light-italic: 'Adelle Light Italic';
 
 @font-face {
 font-family: 'Adelle Light';
@@ -29,6 +31,7 @@ font-weight: normal;
 src: local('Adelle Light'), url('../fonts/adelle/Adelle_light.woff') format('woff');
 }
 
+$adelle-light: 'Adelle Light';
 
 @font-face {
 font-family: 'Adelle SemiBold Italic';
@@ -45,6 +48,7 @@ font-weight: normal;
 src: local('Adelle SemiBold'), url('../fonts/adelle/Adelle_Semibold.woff') format('woff');
 }
 
+$adelle-semibold: 'Adelle SemiBold';
 
 @font-face {
 font-family: 'Adelle Bold';
@@ -53,6 +57,7 @@ font-weight: normal;
 src: local('Adelle Bold'), url('../fonts/adelle/Adelle_Bold.woff') format('woff');
 }
 
+$adelle-bold: 'Adelle Bold';
 
 @font-face {
 font-family: 'Adelle Bold Italic';
@@ -100,7 +105,7 @@ src: local('Adelle Heavy Italic'), url('../fonts/adelle/Adelle_HeavyItalic.woff'
     font-family: 'Open Sans Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans Regular'), url('OpenSans-Regular.woff') format('woff');
+    src: local('Open Sans Regular'), url('../fonts/opensans/OpenSans-Regular.woff') format('woff');
     }
     
 
@@ -108,7 +113,7 @@ src: local('Adelle Heavy Italic'), url('../fonts/adelle/Adelle_HeavyItalic.woff'
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans'), url('OpenSans-Regular.woff') format('woff');
+    src: local('Open Sans'), url('../fonts/opensans/OpenSans-Regular.woff') format('woff');
     }
     
 
@@ -116,7 +121,7 @@ src: local('Adelle Heavy Italic'), url('../fonts/adelle/Adelle_HeavyItalic.woff'
     font-family: 'Open Sans Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans Italic'), url('OpenSans-Italic.woff') format('woff');
+    src: local('Open Sans Italic'), url('../fonts/opensans/OpenSans-Italic.woff') format('woff');
     }
     
 
@@ -124,7 +129,7 @@ src: local('Adelle Heavy Italic'), url('../fonts/adelle/Adelle_HeavyItalic.woff'
     font-family: 'Open Sans Light';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans Light'), url('OpenSans-Light.woff') format('woff');
+    src: local('Open Sans Light'), url('../fonts/opensans/OpenSans-Light.woff') format('woff');
     }
     
 
@@ -132,7 +137,7 @@ src: local('Adelle Heavy Italic'), url('../fonts/adelle/Adelle_HeavyItalic.woff'
     font-family: 'Open Sans Light Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans Light Italic'), url('OpenSans-LightItalic.woff') format('woff');
+    src: local('Open Sans Light Italic'), url('../fonts/opensans/OpenSans-LightItalic.woff') format('woff');
     }
     
 
@@ -140,7 +145,7 @@ src: local('Adelle Heavy Italic'), url('../fonts/adelle/Adelle_HeavyItalic.woff'
     font-family: 'Open Sans SemiBold';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans SemiBold'), url('OpenSans-SemiBold.woff') format('woff');
+    src: local('Open Sans SemiBold'), url('../fonts/opensans/OpenSans-SemiBold.woff') format('woff');
     }
     
 
@@ -148,7 +153,7 @@ src: local('Adelle Heavy Italic'), url('../fonts/adelle/Adelle_HeavyItalic.woff'
     font-family: 'Open Sans SemiBold Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans SemiBold Italic'), url('OpenSans-SemiBoldItalic.woff') format('woff');
+    src: local('Open Sans SemiBold Italic'), url('../fonts/opensans/OpenSans-SemiBoldItalic.woff') format('woff');
     }
     
 
@@ -156,7 +161,7 @@ src: local('Adelle Heavy Italic'), url('../fonts/adelle/Adelle_HeavyItalic.woff'
     font-family: 'Open Sans Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans Bold'), url('OpenSans-Bold.woff') format('woff');
+    src: local('Open Sans Bold'), url('../fonts/opensans/OpenSans-Bold.woff') format('woff');
     }
     
 
@@ -164,7 +169,7 @@ src: local('Adelle Heavy Italic'), url('../fonts/adelle/Adelle_HeavyItalic.woff'
     font-family: 'Open Sans Bold Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans Bold Italic'), url('OpenSans-BoldItalic.woff') format('woff');
+    src: local('Open Sans Bold Italic'), url('../fonts/opensans/OpenSans-BoldItalic.woff') format('woff');
     }
     
 
@@ -172,7 +177,7 @@ src: local('Adelle Heavy Italic'), url('../fonts/adelle/Adelle_HeavyItalic.woff'
     font-family: 'Open Sans ExtraBold';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans ExtraBold'), url('OpenSans-ExtraBold.woff') format('woff');
+    src: local('Open Sans ExtraBold'), url('../fonts/opensans/OpenSans-ExtraBold.woff') format('woff');
     }
     
 
@@ -180,7 +185,7 @@ src: local('Adelle Heavy Italic'), url('../fonts/adelle/Adelle_HeavyItalic.woff'
     font-family: 'Open Sans ExtraBold Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans ExtraBold Italic'), url('OpenSans-ExtraBoldItalic.woff') format('woff');
+    src: local('Open Sans ExtraBold Italic'), url('../fonts/opensans/OpenSans-ExtraBoldItalic.woff') format('woff');
     }
     
 
@@ -188,7 +193,7 @@ src: local('Adelle Heavy Italic'), url('../fonts/adelle/Adelle_HeavyItalic.woff'
     font-family: 'Open Sans Light Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans Light Regular'), url('OpenSans-Light-webfont.woff') format('woff');
+    src: local('Open Sans Light Regular'),url('../fonts/opensans/OpenSans-Light-webfont.woff') format('woff');
     }
     
 
@@ -196,5 +201,5 @@ src: local('Adelle Heavy Italic'), url('../fonts/adelle/Adelle_HeavyItalic.woff'
     font-family: 'Open Sans Condensed Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Open Sans Condensed Bold'), url('OpenSans-CondBold.woff') format('woff');
+    src: local('Open Sans Condensed Bold'), url('../fonts/opensans/OpenSans-CondBold.woff') format('woff');
     }

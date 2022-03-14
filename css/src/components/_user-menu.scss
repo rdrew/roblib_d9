@@ -1,0 +1,56 @@
+[data-drupal-link-system-path='user/login'] {
+}
+
+#block-roblib-d9-account-menu {
+  a {
+    font-family: $body-font-family !important;
+
+    &:before {
+      margin-right: 5px;
+      font-family: $icon-font;
+    }
+  }
+}
+#block-roblib-d9-account-menu {
+  a[href='/user/login'] {
+    //font-family: 'Font Awesome 6 Brands';
+    //font-family: $body-font-family;
+    @extend %fa-icon;
+    @extend .fa-solid;
+
+    &:before {
+      //font-family: 'Font Awesome 6 Free';
+      content: fa-content($fa-var-arrow-right-to-bracket);
+    }
+  }
+  a[href='/user/logout'] {
+    //font-family: 'Font Awesome 6 Brands';
+    //font-family: $body-font-family;
+    @extend %fa-icon;
+    @extend .fa-solid;
+
+    &:before {
+      //font-family: 'Font Awesome 6 Free';
+      content: fa-content($fa-var-arrow-right-from-bracket);
+    }
+  }
+  a[href='/user'] {
+    //font-family: $body-font-family;
+    @extend %fa-icon;
+    @extend .fa-solid;
+
+    &:before {
+      //font-family: 'Font Awesome 6 Free';
+      content: fa-content($fa-var-user);
+    }
+  }
+}
+
+#block-userlogin {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    //content: fa-content($fa-right-to-bracket);
+  }
+}

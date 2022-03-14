@@ -1,0 +1,18 @@
+<div class="tabs-content" data-tabs-content="search-tabs">
+  {% for row in rows %}
+    {% if loop.first %}
+    <div class="tabs-panel is-active" id="{{ row.content['#row']._entity.nid.value|striptags|trim }}">
+    {% else %}
+      <div class="tabs-panel" id="{{ row.content['#row']._entity.nid.value|striptags|trim }}">
+    {% endif %}
+      {{- row.content -}}
+    </div>
+  {% endfor %}
+</div>
+
+
+
+
+
+
+

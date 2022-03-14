@@ -8,6 +8,7 @@ $offcanvas-padding: 20px;
   ul.menu a {
     color: #fff;
     border-left: 2px solid #333;
+    font-size: ms(-1);
   }
   ul.menu a.is-active {
     color: $upei-yellow;
@@ -32,3 +33,4 @@ $offcanvas-padding: 20px;
     @include hamburger(#fff, #fff, 20px, 20px, 2px, 3);
   }
 }
+//icons
